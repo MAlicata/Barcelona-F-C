@@ -20,35 +20,53 @@
         </header>
     </div>
 
+    <!-- aqui va el modal para abrir el profile card -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+    Mi Cuenta
+  </button>
+    <div class="modal justify-content-center" id="myModal">
+        <div class="modal-dialog" style="max-width: fit-content; margin: auto; margin-top: 10%;">
+            <div class="modal-content">
+                <div class="card" style="width: 18rem;">
+                    <img src="img/profileimg.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Lucas Matias Zarife</h5>
+                        <p class="card-text">Fan desde 01/08/1998</p>
+                        <p class="card-text">Email Registrado: lucmatzar@gmail.com</p>
+                        <p class="card-text">Puntaje de Fan: 1800 pts.</p>
+                        <a href="login.html" class="btn btn-primary">Modificar Perfil</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Profile Card  -->
 
-    <footer class="page-footer font-small fixed-bottom" style="background-color: #222222; color: bisque; padding: 1em;">
-        <div class="container-fluid text-center "></div>
+
+    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+        <div class="container-fluid "></div>
         <div class="row">
-            <div class="col-sm-3 align-items-center">
+            <div class="col-sm-3 d-flex align-items-center justify-content-center">
                 <img src="img/logo-sm.jpg" alt="">
             </div>
             <div class="col-sm-3">
-                <p>
-                    <b>
-                        Nuestro Club
-                    </b>
-                </p>
-                <ul>
-                    <il>Tel. 902 1899 00</il>
+                <div>
+                    <p><b>Nuestro Club</b></p>
+                    <span>Tel. 902 1899 00</span>
                     <br>
-                    <il>Arístides Maillol s/n, 08028 Barcelona</il>
+                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
                     <br>
-                    <il>oab@fcbarcelona.cat</il>
-                </ul>
+                    <span>oab@fcbarcelona.cat</span>
+                </div>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 justify-content-center">
                 <a href="http://">
                     <b style="color: bisque;">
                         Contactenos
                     </b>
                 </a>
             </div>
-            <div class="col-sm-3">
+            <div class="col-sm-3 justify-content-center">
                 <a href="https://www.facebook.com/fcbarcelona">
                     <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
                 </a>
