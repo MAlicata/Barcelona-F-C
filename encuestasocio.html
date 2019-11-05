@@ -12,34 +12,76 @@
 </head>
 
 <body class="bg-light">
+    <div class="container">
+        <!-- Header -->
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Api Clima</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hazte Socio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Cerrar Seccion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Mi cuenta</a>
+            </li>
 
+        </ul>
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand" href="#">
+                <img src="/img/logo.png" width="30" height="30" class="d-inline-block align-top" alt=""> FC Barcelona
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Calendario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clasificacion</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Galeria</a>
+                </li>
+            </ul>
 
-    <!-- Start Encuesta socios -->
-    <div class="container py-5" id="encuesta socios">
-        <div class="py-5 text-center">
-            <h1>Encuesta de los socios</h1>
-            <p>Valoramos tu opinion sobre el club! Por favor responde la encuestra general de los socios y participa del sorteo por entradas al proximo partido!</p>
-        </div>
-        <div class="row px-3">
-            <form action="" class="needs-validation" novalidate="">
-                <div class="form-group">
-                    <label for="nombre">Tu nombre</label>
-                    <input class="form-control" type="text" placeholder="Nombre">
-                </div>
-                <div class="form-group">
-                    <label for="edad">Tu edad</label>
-                    <input class="form-control" type="number" name="" id="edad" placeholder="Edad">
-                </div>
-                <div class="form-group">
+        </nav>
 
-                    <label for="genero">Tu genero</label>
-                    <input class="form-control-input" type="radio" name="genero" id="genero"><span>Masculino</span>
-                    <input class="form-control-input" type="radio" name="genero" id="genero"><span>Femenino</span>
-                </div>
-                <div class="form-group">
+        <!-- Start Encuesta socios -->
+        <div class="container py-5" id="encuesta socios">
+            <div class="py-5 text-center">
+                <h1>Encuesta de los socios</h1>
+                <p>Valoramos tu opinion sobre el club! Por favor responde la encuestra general de los socios y participa del sorteo por entradas al proximo partido!</p>
+            </div>
+            <div class="row px-3">
+                <form action="" class="needs-validation" novalidate="">
+                    <div class="form-group">
+                        <label for="nombre">Tu nombre</label>
+                        <input class="form-control" type="text" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Tu edad</label>
+                        <input class="form-control" type="number" name="" id="edad" placeholder="Edad">
+                    </div>
+                    <div class="form-group">
 
-                    <label for="pais">Tu Pais de Residencia</label>
-                    <select class="form-control" name="pais" id="pais">
+                        <label for="genero">Tu genero</label>
+                        <input class="form-control-input" type="radio" name="genero" id="genero"><span>Masculino</span>
+                        <input class="form-control-input" type="radio" name="genero" id="genero"><span>Femenino</span>
+                    </div>
+                    <div class="form-group">
+
+                        <label for="pais">Tu Pais de Residencia</label>
+                        <select class="form-control" name="pais" id="pais">
                         <option value="Afghanistan">Afghanistan</option>
                         <option value="Åland Islands">Åland Islands</option>
         <option value="Albania">Albania</option>
@@ -285,91 +327,91 @@
         <option value="Zambia">Zambia</option>
         <option value="Zimbabwe">Zimbabwe</option>
         </select>
-                </div>
-                <div class="form-group">
-                    <label for="fchaultpart">Fecha del ultimo partido al que fuiste al estadio</label>
-                    <input class="form-control" type="date" name="" id="fchaultpart">
-                </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
+                        <label for="fchaultpart">Fecha del ultimo partido al que fuiste al estadio</label>
+                        <input class="form-control" type="date" name="" id="fchaultpart">
+                    </div>
+                    <div class="form-group">
 
-                    <label for="porcemessi">¿En que porcentaje Messi es determinante en los éxitos y resultados del equipo?
+                        <label for="porcemessi">¿En que porcentaje Messi es determinante en los éxitos y resultados del equipo?
                     </label>
 
-                    <div class="range-field">
-                        <b>0%</b>
-                        <input class="border-0" type="range" name="porcemessi" min="0" max="100">
-                        <b>100%</b>
+                        <div class="range-field">
+                            <b>0%</b>
+                            <input class="border-0" type="range" name="porcemessi" min="0" max="100">
+                            <b>100%</b>
+                        </div>
+
                     </div>
+                    <div class="form-group">
 
-                </div>
-                <div class="form-group">
+                        <label for="griez">¿Te gustaria que el Barça fichara a Griezmann?</label>
+                        <br>
+                        <input class="form-control-input" type="radio" name="griez" id=""><span>Si</span>
+                        <input class="form-control-input" type="radio" name="griez" id=""><span>No</span>
+                        <input class="form-control-input" type="radio" name="griez" id=""><span>Me da igual</span>
+                        <input class="form-control-input" type="radio" name="griez" id=""><span>Tengo mis dudas</span>
+                    </div>
+                    <div class="form-group">
 
-                    <label for="griez">¿Te gustaria que el Barça fichara a Griezmann?</label>
-                    <br>
-                    <input class="form-control-input" type="radio" name="griez" id=""><span>Si</span>
-                    <input class="form-control-input" type="radio" name="griez" id=""><span>No</span>
-                    <input class="form-control-input" type="radio" name="griez" id=""><span>Me da igual</span>
-                    <input class="form-control-input" type="radio" name="griez" id=""><span>Tengo mis dudas</span>
-                </div>
-                <div class="form-group">
-
-                    <label for="jugfav">¿Quien es tu jugador favorito?</label>
-                    <input class="form-control" type="text" name="jugfav" id="">
-                </div>
-                <input class="btn btn-primary" type="submit" value="Enviar mi opinion">
-            </form>
+                        <label for="jugfav">¿Quien es tu jugador favorito?</label>
+                        <input class="form-control" type="text" name="jugfav" id="">
+                    </div>
+                    <input class="btn btn-primary" type="submit" value="Enviar mi opinion">
+                </form>
+            </div>
         </div>
-    </div>
 
 
-    <!-- End Encuesta socios -->
+        <!-- End Encuesta socios -->
 
-    <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
-        <div class="container-fluid "></div>
-        <div class="row">
-            <div class="col-sm-3 d-flex align-items-center justify-content-center">
-                <img src="img/logo-sm.jpg" alt="">
-            </div>
-            <div class="col-sm-3">
-                <div>
-                    <p><b>Nuestro Club</b></p>
-                    <span>Tel. 902 1899 00</span>
-                    <br>
-                    <span>Arístides Maillol s/n, 08028 Barcelona</span>
-                    <br>
-                    <span>oab@fcbarcelona.cat</span>
+        <footer class="page-footer font-small" style="background-color: #222222; color: bisque; padding: 1em;">
+            <div class="container-fluid "></div>
+            <div class="row">
+                <div class="col-sm-3 d-flex align-items-center justify-content-center">
+                    <img src="img/logo-sm.jpg" alt="">
                 </div>
-            </div>
-            <div class="col-sm-3 justify-content-center">
-                <a href="http://">
-                    <b style="color: bisque;">
+                <div class="col-sm-3">
+                    <div>
+                        <p><b>Nuestro Club</b></p>
+                        <span>Tel. 902 1899 00</span>
+                        <br>
+                        <span>Arístides Maillol s/n, 08028 Barcelona</span>
+                        <br>
+                        <span>oab@fcbarcelona.cat</span>
+                    </div>
+                </div>
+                <div class="col-sm-3 justify-content-center">
+                    <a href="http://">
+                        <b style="color: bisque;">
                         Contactenos
                     </b>
-                </a>
+                    </a>
+                </div>
+                <div class="col-sm-3 justify-content-center">
+                    <a href="https://www.facebook.com/fcbarcelona">
+                        <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
+                    </a>
+                    <a href="https://www.instagram.com/fcbarcelona/">
+                        <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
+                    </a>
+                    <a href="https://twitter.com/fcbarcelona_es">
+                        <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
+                    </a>
+                </div>
             </div>
-            <div class="col-sm-3 justify-content-center">
-                <a href="https://www.facebook.com/fcbarcelona">
-                    <i style="font-size:24px; color: bisque;" class="fa">&#xf230;</i>
-                </a>
-                <a href="https://www.instagram.com/fcbarcelona/">
-                    <i style="font-size:24px; color: bisque;" class="fa">&#xf16d;</i>
-                </a>
-                <a href="https://twitter.com/fcbarcelona_es">
-                    <i style="font-size:24px; color: bisque;" class="fa">&#xf099;</i>
-                </a>
+            <br>
+            <div class="footer-copyright text-center">
+                <p>
+                    © Copyright FC Barcelona Página Oficial del FC Barcelona
+                </p>
             </div>
-        </div>
-        <br>
-        <div class="footer-copyright text-center">
-            <p>
-                © Copyright FC Barcelona Página Oficial del FC Barcelona
-            </p>
-        </div>
-    </footer>
+        </footer>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
