@@ -99,7 +99,7 @@
             <img src="img/laliga.jpg" alt="">
             <div class="table-responsive">
                 <caption>Ultima Actualizacion: 10:02 am 02/11/2019</caption>
-                <table class="table table-hover">
+                <table class="table table-hover table-bordered">
                     <thead class="thead-dark">
                         <tr>
                             <th scope="col">Posicion</th>
@@ -113,18 +113,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="background: linear-gradient (90deg, #cd122d, #154284);">
+                        <tr style="background-image: linear-gradient(90deg, #cd122d, #154284);">
                             <th scope="row">1</th>
-                            <td>FC Barcelona</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/268.png" alt=""></a>
+                                FC Barcelona
+                            </td>
                             <td>22</td>
-                            <td>7</td>
-                            <td>1</td>
-                            <td>2</td>
+                            <td>
+                                <a href="#" data-toggle="popover" title="Partidos Ganados" data-content="" data-html="true" data-template='<img src="img/resultados/barcavskobe.jpg" alt="">'>7</a>
+                            </td>
+                            <td> <a href="#" data-toggle="popover" title="Partidos Perdidos" data-content="" data-html="true" data-template='<img src="img/resultados/empate.jpg" alt="">'>1</a>
+
+                            </td>
+                            <td>
+                                <a href="#" data-toggle="popover" title="Partidos Perdidos" data-content="" data-html="true" data-template='<img src="img/resultados/barcavschel.jpg" alt="">'>2</a>
+                            </td>
                             <td></td>
                         </tr>
                         <tr>
                             <th scope="row">2</th>
-                            <td>R Madrid</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/280.png" alt=""></a> R Madrid
+                            </td>
                             <td>21</td>
                             <td>6</td>
                             <td>3</td>
@@ -133,7 +144,9 @@
                         </tr>
                         <tr>
                             <th scope="row">3</th>
-                            <td>Granada</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/3496.png" alt=""></a>
+                                Granada</td>
                             <td>20</td>
                             <td>6</td>
                             <td>2</td>
@@ -142,7 +155,9 @@
                         </tr>
                         <tr>
                             <th scope="row">4</th>
-                            <td>Atletico</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/495.png" alt=""></a>
+                                Atletico</td>
                             <td>20</td>
                             <td>5</td>
                             <td>5</td>
@@ -151,7 +166,9 @@
                         </tr>
                         <tr>
                             <th scope="row">5</th>
-                            <td>Sevilla</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/269.png" alt=""></a>
+                                Sevilla</td>
                             <td>20</td>
                             <td>6</td>
                             <td>2</td>
@@ -160,7 +177,9 @@
                         </tr>
                         <tr>
                             <th scope="row">6</th>
-                            <td>Real Sociedad</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/272.png" alt=""></a>
+                                Real Sociedad</td>
                             <td>19</td>
                             <td>6</td>
                             <td>1</td>
@@ -169,7 +188,9 @@
                         </tr>
                         <tr>
                             <th scope="row">7</th>
-                            <td>Villareal</td>
+                            <td>
+                                <a href=""><img src="https://s3.amazonaws.com/bookmkrs/img/logos/mini/284.png" alt=""></a>
+                                Villareal</td>
                             <td>17</td>
                             <td>5</td>
                             <td>2</td>
@@ -181,8 +202,6 @@
                     </tbody>
                 </table>
             </div>
-
-            <img src="img/clasificaciones.jpg" alt="">
         </div>
         <!-- END TABLE CLASIFICACIONES -->
 
@@ -241,10 +260,14 @@
     </div>
     <!-- END FOOTER -->
 
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
 </body>
 
 </html>
