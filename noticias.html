@@ -8,64 +8,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="noticias.css">
 
-    <style>
-        /* Container holding the image and the text */
-        
-        .noticia {
-            position: relative;
-        }
-        /* Bottom right text */
-        
-        .text-block {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            left: 30%;
-            top: 50%;
-            background-color: #222222;
-            color: white;
-            padding-left: 1em;
-            padding-right: 1em;
-            overflow: hidden;
-            font: 300 12px/14px Arial;
-        }
-        
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-        }
-        /* Create four equal columns that sits next to each other */
-        
-        .column {
-            flex: 30%;
-            max-width: 30%;
-            padding: 0 4px;
-        }
-        
-        .column img {
-            margin-top: 8px;
-            vertical-align: middle;
-            width: 100%;
-        }
-        /* Responsive layout - makes a two column-layout instead of four columns */
-        
-        @media screen and (max-width: 800px) {
-            .column {
-                flex: 50%;
-                max-width: 50%;
-            }
-        }
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        
-        @media screen and (max-width: 600px) {
-            .column {
-                flex: 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
 </head>
 
 
@@ -120,124 +64,104 @@
 
 
         <!-- START NEWS CONTAINER -->
-        <div class="container py-5" id="encuesta socios">
+        <div class="container-fluid py-5">
             <div class="py-5 text-center">
                 <h1>Noticias</h1>
             </div>
             <div class="row">
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal2.jpg" alt="">
-                        <div class="text-block">
-                            <h4>La calculadora del Barça en la Champions</h4>
-                            <p>¿Qué debe hacer el equipo azulgrana para estar en octavos? Repasamos todas las combinaciones posibles</p>
-                        </div>
+
+                <div class="noticia">
+                    <img src="img/gal/gal2.jpg" alt="">
+                    <div class="text-block">
+                        <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1484061/la-calculadora-del-barca-en-la-champions" target="_blank">
+                            <h6>La calculadora del Barça en la Champions</h6>
+                        </a>
+                        <p>¿Qué debe hacer el equipo azulgrana para estar en octavos? Repasamos todas las combinaciones posibles</p>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal3.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Chocan con el muro checo</h4>
-                            <p>A pesar de la insistencia azulgrana, los culés no han podido superar la portería de Kolář y terminan sumando un punto más para mantenerse líderes del grupo F</p>
-                        </div>
+                <div class="noticia">
+                    <img src="img/gal/gal3.jpg" alt="">
+                    <div class="text-block">
+                        <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1483813/chocan-con-el-muro-checo-0-0" target="_blank">
+                            <h6>Chocan con el muro checo</h6>
+                        </a>
+                        <p>A pesar de la insistencia azulgrana, los culés no han podido superar la portería de Kolář y terminan sumando un punto más para mantenerse líderes del grupo F</p>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal5.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Jordi Alba recae de la lesión en el bíceps femoral</h4>
-                            <p>El lateral azulgrana se ha lesionado en el descanso y las pruebas realizadas al finalizar el partido han mostrado que Alba ha tenido una recaída de la lesión en el bíceps femoral del muslo izquierdo</p>
-                        </div>
+                <div class="noticia">
+                    <img src="img/gal/gal5.jpg" alt="">
+                    <div class="text-block">
+                        <a href="https://www.fcbarcelona.es/es/futbol/primer-equipo/noticias/1483774/jordi-alba-recae-de-la-lesion-en-el-biceps-femoral" target="_blank">
+                            <h6>Jordi Alba recae de la lesión en el bíceps femoral</h6>
+                        </a>
+                        <p>El lateral azulgrana se ha lesionado en el descanso y las pruebas realizadas al finalizar el partido han mostrado que Alba ha tenido una recaída de la lesión en el bíceps femoral del muslo izquierdo</p>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal8.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Barça - Slavia de Praga: Vuelve la Champions al Camp Nou</h4>
-                            <p>(18:55 horas, Movistar Liga de Campeones) Los culés reciben al conjunto checo en la cuarta jornada de la fase de grupos europea para tratar de encauzar el acceso a los octavos de final</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal10.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Así fue el partido de ida contra el Slavia</h4>
-                            <p>Repasamos los momentos más destacados de la victoria azulgrana en el Eden Arena</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal9.jpg" alt="">
-                        <div class="text-block">
-                            <h4>La convocatoria para recibir al Slavia</h4>
-                            <p>Ernesto Valverde ha dado a conocer a los 18 jugadores citados para afrontar la cuarta jornada de la fase de grupos de la Liga de Campeones</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal-v-1.jpg" alt="">
-                        <div class="text-block">
-                            <h4>El ABC del Barça-Slavia</h4>
-                            <p>Ponte a prueba y acierta las 26 preguntas, una por letra. ¿Cuánto sabes sobre los dos conjuntos que se enfrentarán en la jornada 4 de la Champions?</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal-v-2.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Así será la semana del primer equipo</h4>
-                            <p>Los culés jugarán martes (Slavia) y sábado (Celta) en la semana antes del último parón de selecciones del año</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal5.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Recuperación antes de la Liga de Campeones</h4>
-                            <p>El campo Tito Vilanova ha sido el escenario de la sesión de este domingo</p>
-                        </div>
+                <div class="noticia">
+                    <img src="img/gal/gal3.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Levante-Barça: El líder quiere mantener la racha</h6>
+                        <p>El conjunto culé visita el Ciudad de Valencia en la 12ª jornada del campeonato de Liga en busca de la 8ª victoria consecutiva</p>
                     </div>
                 </div>
 
-            </div>
-            <div class="row">
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal10.jpg" alt="">
-                        <div class="text-block">
-                            <h4>Comunicado médico de Luis Suárez</h4>
-                            <p>Las pruebas realizadas han mostrado que tiene una lesión en el sóleo de la pierna derecha</p>
-                        </div>
+
+                <div class="noticia">
+                    <img src="img/gal/gal8.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Barça - Slavia de Praga: Vuelve la Champions al Camp Nou</h6>
+                        <p>Movistar Liga de Campeones: Los culés reciben al conjunto checo en la cuarta jornada de la fase de grupos europea para tratar de encauzar el acceso a los octavos de final</p>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal3.jpg" alt="">
-                        <div class="text-block">
-                            <h4>PREVIA | Levante - Barça: El líder quiere mantener la racha</h4>
-                            <p>El conjunto culé visita el Ciudad de Valencia en la 12ª jornada del campeonato de Liga en busca de la 8ª victoria consecutiva</p>
-                        </div>
+                <div class="noticia">
+                    <img src="img/gal/gal10.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Así fue el partido de ida contra el Slavia</h6>
+                        <p>Repasamos los momentos más destacados de la victoria azulgrana en el Eden Arena</p>
                     </div>
                 </div>
-                <div class="column">
-                    <div class="noticia">
-                        <img src="img/gal/gal9.jpg" alt="">
-                        <div class="text-block">
-                            <h4>La convocatoria para visitar el Levante</h4>
-                            <p>Ernesto Valverde ha dado a conocer los 19 jugadores citados, para afrontar la 12ª jornada de Liga en el Ciudad de Valencia (16 horas)</p>
-                        </div>
+                <div class="noticia">
+                    <img src="img/gal/gal9.jpg" alt="">
+                    <div class="text-block">
+                        <h6>La convocatoria para recibir al Slavia</h6>
+                        <p>Ernesto Valverde ha dado a conocer a los 18 jugadores citados para afrontar la cuarta jornada de la fase de grupos de la Liga de Campeones</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="img/gal/gal9.jpg" alt="">
+                    <div class="text-block">
+                        <h6>La convocatoria para visitar el Levante</h6>
+                        <p>Ernesto Valverde ha dado a conocer los 19 jugadores citados, para afrontar la 12ª jornada de Liga en el Ciudad de Valencia (16 horas)</p>
+                    </div>
+                </div>
+
+
+                <div class="noticia">
+                    <img src="img/gal/gal-v-1.jpg" alt="">
+                    <div class="text-block">
+                        <h6>El ABC del Barça-Slavia</h6>
+                        <p>Ponte a prueba y acierta las 26 preguntas, una por letra. ¿Cuánto sabes sobre los dos conjuntos que se enfrentarán en la jornada 4 de la Champions?</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="img/gal/gal-v-2.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Así será la semana del primer equipo</h6>
+                        <p>Los culés jugarán martes (Slavia) y sábado (Celta) en la semana antes del último parón de selecciones del año</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="img/gal/gal5.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Recuperación antes de la Liga de Campeones</h6>
+                        <p>El campo Tito Vilanova ha sido el escenario de la sesión de este domingo</p>
+                    </div>
+                </div>
+                <div class="noticia">
+                    <img src="img/gal/gal10.jpg" alt="">
+                    <div class="text-block">
+                        <h6>Comunicado médico de Luis Suárez</h6>
+                        <p>Las pruebas realizadas han mostrado que tiene una lesión en el sóleo de la pierna derecha</p>
                     </div>
                 </div>
 
