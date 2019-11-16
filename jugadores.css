@@ -14,7 +14,7 @@ body {
     flex-direction: column;
 }
 
-img {
+.fotoJug {
     width: 190px;
     display: flex;
     justify-content: center;
@@ -26,11 +26,11 @@ img {
 }
 
 .jugadoress {
-    color: black;
+    color: antiquewhite;
 }
 
 .nombreJ {
-    color: black;
+    color: antiquewhite;
     display: flex;
     justify-content: center;
 }
@@ -48,7 +48,4 @@ img {
     display: none;
     top: 0;
 
-}
-h2{
-    color: antiquewhite;
 }
