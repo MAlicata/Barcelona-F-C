@@ -1,3 +1,6 @@
+.row{
+    justify-content: center;
+}
 body {
     background-color: rgb(0, 0, 87);
     background-image: linear-gradient(to left, rgb(167, 0, 0), rgb(0, 0, 87));
