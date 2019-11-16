@@ -5,3 +5,8 @@ a:hover {
 a:hover a:link {
     color: #00aaff;
 }
+
+img {
+    width: 100%;
+    height: 80%;
+}
