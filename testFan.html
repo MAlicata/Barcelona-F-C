@@ -157,20 +157,20 @@
                         </p>
                         <hr />
                         <p>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 1%"></div>
-                            </div>
+                            
                             <input type="button" value=" R E S U L T A D O " onclick="resultado()" />
                         </p>
                     </form>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
-                    <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/nEdwFW8Vy6A" allowfullscreen></iframe>
-                        <p class="card-text">
-                            Barcelona vs Celta Vigo
-                        </p>
+                    <div class="card">
+                        <img src="https://static2.diariouno.com.ar/media/2019/11/messi-gol1-700x395.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                Messi, histórico: "llegó a 70 goles en la Selección y se acerca al récord de Pelé"
+                            </p>
+                        </div>
                     </div>
                     <div class="card">
                         <img src="/img/lionel-messi-bartomeu-contract_1sy6z2xmmxdxn1idpyt2e0rj31.jpg" class="card-img-top" alt="..." />
@@ -180,10 +180,13 @@
                             </p>
                         </div>
                     </div>
-                    <div class="embed-responsive embed-responsive-16by9">
-
-                        <iframe width="450" height="300" src="https://www.youtube.com/embed/Jeiu7y-a220" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+                    <div class="card">
+                        <img src="https://www.infobae.com/new-resizer/-H_dKLQ3LCga69MuE0h3v2YgcYk=/750x0/filters:quality(100)/arc-anglerfish-arc2-prod-infobae.s3.amazonaws.com/public/WCVH6SIYIJHVTOLAJQSQZTYA2I.jpg" class="card-img-top" alt="..." />
+                        <div class="card-body">
+                            <p class="card-text">
+                                    Barcelona le informó a Luis Suárez que le buscarán un competidor: el delantero argentino que saca ventaja
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -250,70 +253,51 @@
     
         
     
-          var p1, p2, p3, p4, nota;
-  
-          //  Primera Pregunta
-          if (document.getElementById("p11").checked == true) {
-            p1 = 1;
-          } else {
-            p1 = 0;
-          }
-          // Segunda Pregunta
-          if (document.getElementById("p22").checked == true) {
-            p2 = 1;
-          } else {
-            p2 = 0;
-          }
-          // Tercera Pregunta
-          if (document.getElementById("p33").checked == true) {
-            p3 = 1;
-          } else {
-            p3 = 0;
-          }
-          // Cuarta Pregunta
-          if (document.getElementById("p44").checked == true) {
-            p4 = 1;
-          } else {
-            p4 = 0;
-          }
-  
-          nota = p1 + p2 + p3 + p4;
-          alert(" Aciertos: " + nota);
-          location.reload();
-        }
+         
 
 
 
 
      <script>
-     function envio() {
-    document.getElementById("myProgress").style.display = "block";
-    document.getElementById("botonEnvio").disabled = true;
-    move();
+    function resultado(){ 
+        var p1, p2, p3, p4, nota;
+  
+  //  Primera Pregunta
+  if (document.getElementById("p11").checked == true) {
+    p1 = 1;
+  } else {
+    p1 = 0;
+  }
+  // Segunda Pregunta
+  if (document.getElementById("p22").checked == true) {
+    p2 = 1;
+  } else {
+    p2 = 0;
+  }
+  // Tercera Pregunta
+  if (document.getElementById("p33").checked == true) {
+    p3 = 1;
+  } else {
+    p3 = 0;
+  }
+  // Cuarta Pregunta
+  if (document.getElementById("p44").checked == true) {
+    p4 = 1;
+  } else {
+    p4 = 0;
+  }
 
-}
-
-var i = 0;
-
-function move() {
-    if (i == 0) {
-        i = 1;
-        var elem = document.getElementById("myBar");
-        var width = 1;
-        var id = setInterval(frame, 10);
-
-        function frame() {
-            if (width >= 100) {
-                clearInterval(id);
-                i = 0;
-                window.open("./gracias.html", "_self")
-            } else {
-                width++;
-                elem.style.width = width + "%";
-            }
-        }
+  nota = p1 + p2 + p3 + p4;
+  alert(" Aciertos: " + nota);
+  location.reload();
     }
-}
+    
+
+
+
+
+
+
      </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
