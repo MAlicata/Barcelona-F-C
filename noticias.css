@@ -11,10 +11,9 @@
        right: 0;
        left: 30%;
        top: 50%;
-       background-color: #222222;
+       background-color: #22222299;
        color: white;
-       padding-left: 1em;
-       padding-right: 1em;
+     padding: 1em;
        overflow: hidden;
        font: 300 12px/14px Arial;
    }
@@ -34,7 +33,6 @@
    .noticia {
        flex: 30%;
        max-width: 30%;
-       padding: 0 4px;
        display: flex;
        align-items: center;
    }
